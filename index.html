@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" href="images/travel-itinerary.png">
+  <title>Travel</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Logo -->
+  <img src="images/logo2.svg" alt="Logo" class="logo">
+
+  <!-- Hamburger -->
+  <svg class="hamburger" width="20" height="14" xmlns="http://www.w3.org/2000/svg"><path d="M20 12v2H0v-2h20zm0-6v2H0V6h20zm0-6v2H0V0h20z" fill="#000" fill-rule="evenodd"/></svg>
+
+  <!-- Navigation -->
+  <nav class="navigation">
+    <svg class="navigation__close" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M14.364.222l1.414 1.414L9.414 8l6.364 6.364-1.414 1.414L8 9.414l-6.364 6.364-1.414-1.414L6.586 8 .222 1.636 1.636.222 8 6.586 14.364.222z" fill="#000" fill-rule="evenodd" opacity=".201"/></svg>
+    <a href="#" class="navigation__link">home</a>
+    <a href="#" class="navigation__link">shop</a>
+    <a href="#" class="navigation__link">about</a>
+    <a href="#" class="navigation__link">contact</a>
+  </nav>
+
+  <!-- Slides-->
+  <div class="slide__images">
+    <picture class="slide__image slide__image--1 active">
+      <source srcset="images/mobile-image-hero-1.png" media="(max-width: 33.13em)">
+      <img src="images/desktop-image-hero-1.jpg" alt="Image 1">
+    </picture>
+    <picture class="slide__image slide__image--2">
+      <source srcset="images/mobile-image-hero-2.png" media="(max-width: 33.13em)">
+      <img src="images/desktop-image-hero-2.jpg" alt="Images 2">
+    </picture>
+    <picture class="slide__image slide__image--3">
+      <source srcset="images/mobile-image-hero-3.png" media="(max-width: 33.13em)">
+      <img src="images/desktop-image-hero-3.jpg" alt="Images 3">
+    </picture>
+  </div>
+  <div class="slide__contents">
+    <div class="slide__content active">
+      <h1 class="heading heading--1">The most beautiful destinations</h1>
+      <p class="text">
+        With the darker months behind us, we're looking forward to stepping out into the world and enjoying 
+        the colors and scents of this season. But which destinations are worth traveling to in spring?
+      </p>
+      <button class="btn btn--shop">shop now <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="#000" fill-rule="nonzero"/></svg></button>
+    </div>
+    <div class="slide__content">
+      <h1 class="heading heading--1">7 European landmarks you can’t miss</h1>
+      <p class="text">
+        Packed with a myriad of cultures in a relatively small area, Europe is home to 
+        intricacies you could explore forever. If you don’t know where to start, check out our list of Europe’s 
+        top landmarks.
+      </p>
+      <button class="btn btn--shop">shop now <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="#000" fill-rule="nonzero"/></svg></button>
+    </div>
+    <div class="slide__content">
+      <h1 class="heading heading--1">The best of the earth's natural beauty</h1>
+      <p class="text">
+        For many of us, the earth’s awe-inspiring natural beauty is what makes us want to travel far and catch a 
+        glimpse of mother nature’s wonders. Plan your dream trip.
+      </p>
+      <button class="btn btn--shop">shop now <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="#000" fill-rule="nonzero"/></svg></button>
+    </div>
+  </div>
+  <div class="slide__button">
+    <button class="btn btn--prev"><svg width="14" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M13 0L1 12l12 12" stroke="#FFF" fill="none" fill-rule="evenodd"/></svg></button>
+    <button class="btn btn--next"><svg width="14" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M1 0l12 12L1 24" stroke="#FFF" fill="none" fill-rule="evenodd"/></svg></button>
+  </div>
+  <!-- About -->
+  <img src="images/image-about-dark.jpg" alt="About dark" class="about__image about__image--dark" />
+  <div class="about__content">
+    <h2 class="heading heading--2 text-upper">Find the best hotel for your trip</h2>
+    <p class="text">
+      There are a number of ways to find cheap hotels on travel.com. You can filter hotels by price to only
+      show those that match your budget, or sort by price to display the cheapest ones first. If you're a 
+      member of our loyalty program, you can also enjoy discounted rates at select hotels and other properties.
+    </p>
+  </div>
+  <img src="images/image-about-light.jpg" alt="About light" class="about__image about__image--light" />
+
+  <!-- Attribution -->
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor </a> with 
+    modifications. 
+    Coded by <a href="https://github.com/AdekolaThanni/">Antonio Emanuel</a>.
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
